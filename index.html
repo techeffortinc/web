@@ -97,7 +97,7 @@
             gap: 2rem;
             padding: 1rem 0;
             animation: scroll 10s linear infinite; /* Animation for scrolling */
-            
+            transform: translateX(100%); /* Start from the right */
         }
 
         .logo-scroll img {
@@ -109,10 +109,10 @@
         /* Keyframes for scrolling animation */
         @keyframes scroll {
             0% {
-                transform: translateX(0); /* Start from the left */
+                transform: translateX(100%); /* Start from the right */
             }
             100% {
-                transform: translateX(-50%); /* Move to the halfway point */
+                transform: translateX(-100%); /* Move to the left */
             }
         }
 
@@ -179,7 +179,7 @@
             <img src="dcss.png" alt="Company Logo 6">
             <img src="mmc.png" alt="Company Logo 8">
             <img src="scc.png" alt="Company Logo 9">
-            <img src="scr.png" alt="Company Logo 9">
+            <img src="scr.png" alt="Company Logo 10">
         </div>
     </section>
 
