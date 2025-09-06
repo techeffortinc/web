@@ -113,7 +113,11 @@
             width: auto;
             flex-shrink: 0;
         }
-
+        .te-logo img {
+            height: 100px;
+            width: 300px;
+            flex-shrink: 0;
+        }
         /* Keyframes for scrolling animation */
         @keyframes scroll {
             0% {
@@ -144,9 +148,11 @@
 </head>
 <body>
       <header>
-          <!-- Original Logos -->
-          <img src="te.png" alt="te Logo">
-          <p class="since-text">since 2016</p> 
+          <section class="te-logo">
+            <!-- Original Logos -->
+            <img src="te.png" alt="te Logo">
+          </section>
+            <p class="since-text">since 2016</p> 
       </header>
     
     <section class="hero">
