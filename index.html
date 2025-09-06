@@ -13,13 +13,23 @@
         }
 
         header {
-            background: #000000;
+            display: flex;
+            align-items: center;
+            gap: 1rem; /* space between logo and text */
+            background: #000;
             color: #fff;
             padding: 1rem 0;
-            text-align: left;
         }
 
-        header h1 {
+        .te-logo img {
+            height: 100px; /* desired height */
+            width: auto;   /* maintain aspect ratio */
+            display: block;
+        }
+
+        .since-text {
+            font-size: 16px; 
+            color: #fff; 
             margin: 0;
         }
 
@@ -78,19 +88,13 @@
         .content p {
             color: #555;
         }
-        .since-text {
-            font-size: 16px; 
-            color: #fff; 
-            margin-top: 0;
-            margin-left: 10px;
-        }
 
         /* Our Customers Section */
         .customers {
             padding: 2rem;
             background: #f9f9f9;
             text-align: center;
-            overflow: hidden; /* Hide overflow */
+            overflow: hidden;
         }
 
         .customers h3 {
@@ -102,10 +106,8 @@
             display: flex;
             gap: 2rem;
             padding: 1rem 0;
-            flex-wrap: wrap; /* Allows wrapping of icons if they don't fit in one line */
-            justify-content: center; /* Centers the icons horizontally */
-           /* animation: scroll 20s linear infinite; Animation for scrolling */
-           /* transform: translateX(100%);  Start from the right */
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .logo-scroll img {
@@ -113,18 +115,14 @@
             width: auto;
             flex-shrink: 0;
         }
-        .te-logo img {
-            height: 100px;
-            width: 300px;
-            flex-shrink: 0;
-        }
-        /* Keyframes for scrolling animation */
+
+        /* Keyframes for scrolling animation (optional) */
         @keyframes scroll {
             0% {
-                transform: translateX(100%); /* Start from the right */
+                transform: translateX(100%);
             }
             100% {
-                transform: translateX(-100%); /* Move to the left */
+                transform: translateX(-100%);
             }
         } 
 
@@ -132,7 +130,7 @@
             background: #000000;
             color: #fff;
             text-align: center;
-            padding: .1rem;
+            padding: 0.5rem;
             margin-top: 2rem;
         }
 
@@ -147,13 +145,12 @@
     </style>
 </head>
 <body>
-      <header>
-          <section class="te-logo">
-            <!-- Original Logos -->
-            <img src="te.png" alt="te Logo">
-          </section>
-            <p class="since-text">since 2016</p> 
-      </header>
+    <header>
+        <section class="te-logo">
+            <img src="te.png" alt="TE Logo">
+        </section>
+        <p class="since-text">since 2016</p> 
+    </header>
     
     <section class="hero">
         <h3>Unlock the potential of your data with our bespoke Database Services.</h3>
@@ -186,7 +183,6 @@
     <section class="customers">
         <h3>Our Customers</h3>
         <div class="logo-scroll">
-            <!-- Original Logos -->
             <img src="wf.png" alt="Company Logo 1">
             <img src="gap.png" alt="Company Logo 2">
             <img src="infa.png" alt="Company Logo 3">
